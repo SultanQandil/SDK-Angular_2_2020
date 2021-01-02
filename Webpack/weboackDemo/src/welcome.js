@@ -1,5 +1,5 @@
 function docUmentWrite()
 {
-    document.write("welcome on our class")
+    document.write("welcome on our ")
 }
 export default docUmentWrite ;
