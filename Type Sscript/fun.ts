@@ -9,7 +9,7 @@ let Sum1 = function(a,b)
 
 }
 // with data type 
-let Sum2 = function(a :number,b :number) :number
+let Sum2 = function(a :number,b :number) : number
 {
 return a+b
 
@@ -38,8 +38,8 @@ function Sum5 (a : number = 0 ,b :number = 0){
     return a+b
 }
 console.log(Sum5( 1))
-// ptional parameter
-function Sum6 (a : number = 0 , b?:number ){
+// optional parameter
+function Sum6 (a : number , b?:number ){
     return a
 }
 console.log(Sum6( 1))

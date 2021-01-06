@@ -1,20 +1,20 @@
-//var age  = 30 
-// if (age >20)
-// {
-//     var msg = "adult" // global
-// }
-// console.log(msg)
+var age  = 30 
+if (age >20)
+{
+    var msg = "adult" // global
+}
+console.log(msg)
 
-// if (age >20)
-// {
-//     let msg1 = "adult" // local
-// }
-// console.log(msg1)
+if (age >20)
+{
+    let msg1 = "adult" // local
+}
+console.log(msg1)
 
 
 // let varName : dataType 
 
-let age :number  = 15
+let Age :number  = 15
 let Isyouth : boolean = true
 let Name : string = "ahmad"
 let info : string = `name : ${Name}` + `age : ${age}`
@@ -35,6 +35,7 @@ let [a,b,c] = arrnum
 // tuple : array with diifearance data type & spacific element 
 let t :[number , string , boolean] ;
 t = [5,"five",true]
+t[0]
 
 // enum : give numaric names 
 
@@ -50,6 +51,10 @@ console.log(letter.d)
 let m:any ;
 let s :number ;
 s= m
+
+let m1:unknown ;
+let s1 :number ;
+s1= m1
 
 // type assertion 
 let v : any ;
