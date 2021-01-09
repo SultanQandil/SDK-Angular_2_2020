@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "firstProject": {
+    "FirstProject": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/firstProject",
+            "outputPath": "dist/FirstProject",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,21 +62,35 @@
             }
           }
         },
-        "serve": {
+        "serve": 
+        {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "firstProject:build"
+            "browserTarget": "FirstProject:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "firstProject:build:production"
+              "browserTarget": "FirstProject:build:production"
+            }
+          }
+        },
+        "open": 
+        {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "FirstProject:build",
+            "port" : 4500
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "FirstProject:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "firstProject:build"
+            "browserTarget": "FirstProject:build"
           }
         },
         "test": {
@@ -113,16 +127,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "firstProject:serve"
+            "devServerTarget": "FirstProject:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "firstProject:serve:production"
+              "devServerTarget": "FirstProject:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "firstProject"
+  "defaultProject": "FirstProject"
 }
