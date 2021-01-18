@@ -1,0 +1,63 @@
+<!-- interpolation  -->
+
+<p>Wwlcome in first {{msg}}</p>
+
+<!-- data binding - oneway -->
+
+<img [src]="imgUrl">
+<img src={{imgUrl}}>
+<img bind-src ="imgUrl">
+<p></p>
+<button (click) = "say()" [disabled] = "hide">say Hi</button>
+
+<!-- Tow way binding -->
+
+<input [(ngModel)]="username"/> 
+<p> input text is {{username}}</p>
+
+<!-- directive ngfor , ngif ,ngswitch -->
+
+<div class="container">
+    <table class="table">
+        
+       <thead class="thead-dark">
+        <tr>
+             <th> Name</th>
+            <th>salary</th>
+        </tr>
+       </thead>
+    
+    <td>
+        
+         <tr *ngFor ="let e of emp "> {{e.name}}</tr>
+
+         <button  *ngIf= "!isVslid" > click</button>
+       
+    </td>
+    <td>
+        <tr *ngFor ="let e of emp ; trackBy:track"> {{e.salary}}</tr>
+    </td>
+</table>
+<button (click)="reload()"> reload</button>
+<!-- <button (click)="reload1()"> reload1</button> -->
+
+
+</div>
+
+<!-- ngswitch -->
+<div >
+<label >select chiose </label>
+<select [(ngModel)]="n">
+<option *ngFor ="let c of color">{{c}}</option>
+</select>
+</div>
+<div [ngSwitch]="n">
+<p *ngSwitchCase="'red'"> select red </p>
+<p *ngSwitchCase="'green'"> select greend </p>
+<p *ngSwitchCase="'black'"> select black </p>
+
+</div>
+<!-- refrance value -->
+<input type="text" #name/>
+<button (click)="sayHi(name.value)">say hi </button>
+
