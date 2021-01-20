@@ -1,0 +1,19 @@
+<div class="all">
+    
+    <div class="parent">
+        <h3> Parent component </h3>
+        <div></div>
+        <input [(ngModel)] ="dataInparent" type ="text" class="form-control">
+
+        <div class="txt">
+            parent recive from child 
+        </div>
+    </div>
+
+    <div class="child">
+        <h3> Child component</h3>
+        
+    <app-child [dataInChild]="dataInparent">
+    </app-child>
+</div>
+</div>
