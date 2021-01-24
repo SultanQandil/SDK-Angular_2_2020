@@ -6,14 +6,18 @@
         <input [(ngModel)] ="dataInparent" type ="text" class="form-control">
 
         <div class="txt">
-            parent recive from child 
+            parent recive from child {{childTextBoxValueInparent}}
         </div>
     </div>
 
     <div class="child">
         <h3> Child component</h3>
         
-    <app-child [dataInChild]="dataInparent">
+    <app-child 
+    [dataInChild]="dataInparent"
+    (passToparent)="updateinChildValu($event)"
+    >
+
     </app-child>
 </div>
 </div>

@@ -8,6 +8,11 @@ import { Component } from '@angular/core';
 export class ParentComponent  {
 
   dataInparent : string ="";
+  childTextBoxValueInparent :string="";
+  updateinChildValu(event :any)
+  {
+    this.childTextBoxValueInparent = event
+  }
   constructor() { }
 
  

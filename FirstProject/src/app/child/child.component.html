@@ -1,6 +1,6 @@
 <div class="child-comp" >
-    <input  type="text" class="form-control">
-    <button type="button" class="btn btn-info"> send data to parent</button>
+    <input [(ngModel)]="ChildTexBox"  type="text" class="form-control">
+    <button type="button" class="btn btn-info" (click)="passtoParentEmit()"> send data to parent</button>
     <div class="txt">
         
        <p> child recive {{dataInChild}}</p> 
