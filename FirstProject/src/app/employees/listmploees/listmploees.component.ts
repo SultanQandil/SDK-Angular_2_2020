@@ -19,7 +19,8 @@ export class ListmploeesComponent
       phone:   "112233" ,
       department :  "it" ,
       dateofBirth :  new Date("01/01/1999"),
-      PattOfPhoto :  "assets/img/e1.png" ,  
+      PattOfPhoto :  "assets/img/e1.png" , 
+      hidden : false  
   
     } ,
     {
@@ -31,7 +32,8 @@ export class ListmploeesComponent
       department :  "it" ,
       dateofBirth :  new Date("01/01/1999"),
       PattOfPhoto :  "assets/img/e2.png" ,  
-  
+      hidden : false  
+
     } ,
     
   ]

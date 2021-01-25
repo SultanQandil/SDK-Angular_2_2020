@@ -7,9 +7,11 @@ import { IntroComponent } from './intro/intro.component';
 import { ListmploeesComponent } from './employees/listmploees/listmploees.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { HooksComponent } from './hooks/hooks.component';
+import { CouterComponent } from './couter/couter.component';
 
 @NgModule({
-    declarations : [AppComponent, IntroComponent, ListmploeesComponent, ParentComponent, ChildComponent] , // set of component reltae to this module(array)
+    declarations : [AppComponent, IntroComponent, ListmploeesComponent, ParentComponent, ChildComponent, HooksComponent, CouterComponent] , // set of component reltae to this module(array)
     imports: [BrowserModule , CommonModule , FormsModule],
     bootstrap :[AppComponent], // set of components of are bootsraped when this module is boostrabed 
    

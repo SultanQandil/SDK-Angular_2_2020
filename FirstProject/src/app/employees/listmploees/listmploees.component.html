@@ -3,9 +3,13 @@
     <div class="panel-heading">
       
       <h3 class="panel-title">{{employee.name}}</h3>
+      <span [hidden]="!employee.hidden">
+        <button  class="btn btn-warning"  (click)="employee.hidden=false">exband</button>
+      </span>
      
     </div>
-    <div class="panel-body">
+    <div class="panel-body" [hidden]="employee.hidden">
+      <button (click)="employee.hidden=true">Less</button>
   
       <div class="col-xs-10">
   

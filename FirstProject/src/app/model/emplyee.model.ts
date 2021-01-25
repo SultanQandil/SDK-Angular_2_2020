@@ -7,5 +7,6 @@ export class Employee{
     department : string = "" ;
     dateofBirth : Date  = new Date("00/00/0000");
     PattOfPhoto : string = "" ;  
+    hidden : boolean = false ;
 
 }

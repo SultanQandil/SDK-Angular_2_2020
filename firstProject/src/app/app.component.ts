@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 })
 
 export class AppComponent{
-    
+data:string ="hi"   ;
+d :string =""; 
 
 }
