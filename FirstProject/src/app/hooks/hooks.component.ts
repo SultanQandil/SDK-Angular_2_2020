@@ -9,8 +9,12 @@ export class HooksComponent implements OnInit , OnChanges , DoCheck{
 
  @Input() data : string ="";
 
-  ngOnInit(): void {
-    console.log("fron ngInit")
+ ngDoCheck (): void{
+  console.log ("from on changes detection ")
+
+} 
+ ngOnInit(): void {
+    console.log("from ngInit")
   }
   constructor() { 
     console.log ("from constructor ")
@@ -19,8 +23,5 @@ export class HooksComponent implements OnInit , OnChanges , DoCheck{
     console.log ("from on changes ")
     
   }
-  ngDoCheck (): void{
-    console.log ("from on changes detection ")
-
-  }
+  
 }

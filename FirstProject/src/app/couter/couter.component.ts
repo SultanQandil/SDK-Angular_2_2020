@@ -13,7 +13,7 @@ export class CouterComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.inrevalId = setInterval(()=>{this.cunter++},100)
+    this.inrevalId = setInterval( ()=>{this.cunter++} , 1000)
   }
 stopTimer (){
   clearInterval(this.inrevalId);
