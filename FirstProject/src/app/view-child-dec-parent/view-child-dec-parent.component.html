@@ -1,0 +1,14 @@
+<!-- <p>view-child-dec-parent works!</p>
+<div *ngFor="let child of [1,2,3,4] ; let i = index">
+    <app-view-child-dec  #children [title] ="myTitle + i "></app-view-child-dec>
+</div> -->
+
+
+<p>view-child-dec-parent works!</p>
+<div >
+    <app-view-child-dec #children [title]="myTitle"  >
+        <app-subchild *ngFor="let child of [1,2,3,4] ; let i = index" >
+            <p>{{i}}</p>
+        </app-subchild>
+    </app-view-child-dec>
+</div>

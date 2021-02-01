@@ -1,6 +1,7 @@
 <div class="all">
     
     <div class="parent">
+        <p>encapsulation</p>
         <h3> Parent component </h3>
         <div></div>
         <input [(ngModel)] ="dataInparent" type ="text" class="form-control">
@@ -17,6 +18,8 @@
     [dataInChild]="dataInparent"
     (passToparent)="updateinChildValu($event)"
     >
+    <p class="p1">Content Projection1 </p>
+    <p id ="p2">Content Projection2  </p>
 
     </app-child>
 </div>

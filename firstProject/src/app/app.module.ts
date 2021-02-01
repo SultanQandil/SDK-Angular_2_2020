@@ -9,9 +9,13 @@ import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { HooksComponent } from './hooks/hooks.component';
 import { CouterComponent } from './couter/couter.component';
+import { EmployDisplayComponent } from './employ-display/employ-display.component';
+import { ViewChildDecComponent } from './view-child-dec/view-child-dec.component';
+import { ViewChildDecParentComponent } from './view-child-dec-parent/view-child-dec-parent.component';
+import { SubchildComponent } from './subchild/subchild.component';
 
 @NgModule({
-    declarations : [AppComponent, IntroComponent, ListmploeesComponent, ParentComponent, ChildComponent, HooksComponent, CouterComponent] , // set of component reltae to this module(array)
+    declarations : [AppComponent, IntroComponent, ListmploeesComponent, ParentComponent, ChildComponent, HooksComponent, CouterComponent, EmployDisplayComponent, ViewChildDecComponent, ViewChildDecParentComponent, SubchildComponent] , // set of component reltae to this module(array)
     imports: [BrowserModule , CommonModule , FormsModule],
     bootstrap :[AppComponent], // set of components of are bootsraped when this module is boostrabed 
    

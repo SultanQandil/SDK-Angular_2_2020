@@ -1,7 +1,9 @@
-<div class="panel panel-primary" *ngFor="let employee of employee">
+<div class="panel panel-primary" *ngFor="let employee of employeeToDispay">
   
     <div class="panel-heading">
-      
+      <button  class="btn btn-warning"  (click)="next()">next</button>
+      <app-employ-display [employyToDisplay]="employeeToDispay"></app-employ-display>
+
       <h3 class="panel-title">{{employee.name}}</h3>
       <span [hidden]="!employee.hidden">
         <button  class="btn btn-warning"  (click)="employee.hidden=false">exband</button>

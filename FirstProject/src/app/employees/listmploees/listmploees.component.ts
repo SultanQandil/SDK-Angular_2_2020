@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnChanges, OnInit  , SimpleChanges} from '@angular/core';
 import { from } from 'rxjs';
 import {Employee} from'../../model/emplyee.model'
 
@@ -7,9 +7,23 @@ import {Employee} from'../../model/emplyee.model'
   templateUrl: './listmploees.component.html',
   styleUrls: ['./listmploees.component.css']
 })
-export class ListmploeesComponent  
+export class ListmploeesComponent  implements OnInit 
 {
-  employee : Employee[] =[
+ 
+  arrayIndex = 0 
+ employeeToDispay : Employee[] = [{
+  id : 0,
+  name : "",
+  gender  :'',
+  email :  "" ,
+  phone:   "" ,
+  department :  "" ,
+  dateofBirth :  new Date("01/01/1999"),
+  PattOfPhoto :  "" , 
+  hidden : false  
+
+ }]
+   employee : Employee[] =[
   
     {
       id : 1,
@@ -37,9 +51,23 @@ export class ListmploeesComponent
     } ,
     
   ]
+  ngOnInit(){
+    this.employeeToDispay[0] = this.employee[0]
+  }
+  next ()
+{
+  this.arrayIndex ++
+  if(this.arrayIndex <=1)
+  {
+    this.employeeToDispay[0]= this.employee[this.arrayIndex]
+  }
+  else 
+  {
+    this.employeeToDispay[0]=this.employee[0]
+    this.arrayIndex =0
+  }
+}
 
-  constructor() { }
 
- 
 
 }
