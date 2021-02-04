@@ -13,9 +13,11 @@ import { EmployDisplayComponent } from './employ-display/employ-display.componen
 import { ViewChildDecComponent } from './view-child-dec/view-child-dec.component';
 import { ViewChildDecParentComponent } from './view-child-dec-parent/view-child-dec-parent.component';
 import { SubchildComponent } from './subchild/subchild.component';
+import { CdStrComponent } from './cd-str/cd-str.component';
+import { CdStrChildComponent } from './cd-str-child/cd-str-child.component';
 
 @NgModule({
-    declarations : [AppComponent, IntroComponent, ListmploeesComponent, ParentComponent, ChildComponent, HooksComponent, CouterComponent, EmployDisplayComponent, ViewChildDecComponent, ViewChildDecParentComponent, SubchildComponent] , // set of component reltae to this module(array)
+    declarations : [AppComponent, IntroComponent, ListmploeesComponent, ParentComponent, ChildComponent, HooksComponent, CouterComponent, EmployDisplayComponent, ViewChildDecComponent, ViewChildDecParentComponent, SubchildComponent, CdStrComponent, CdStrChildComponent] , // set of component reltae to this module(array)
     imports: [BrowserModule , CommonModule , FormsModule],
     bootstrap :[AppComponent], // set of components of are bootsraped when this module is boostrabed 
    

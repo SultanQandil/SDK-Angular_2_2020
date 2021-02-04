@@ -1,0 +1,7 @@
+<p>{{check()}}</p>
+
+<p>cd-str parent works!</p>
+<input  #newnmae placeholder="ennter name ">
+<button (click)="addName(newnmae.value)">Add new Name </button>
+
+<app-cd-str-child [data]="names"></app-cd-str-child>

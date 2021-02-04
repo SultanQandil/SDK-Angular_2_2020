@@ -45,7 +45,7 @@ export class ListmploeesComponent  implements OnInit
       phone:   "112233" ,
       department :  "it" ,
       dateofBirth :  new Date("01/01/1999"),
-      PattOfPhoto :  "assets/img/e2.png" ,  
+      PattOfPhoto :  "assets/img/e3.png" ,  
       hidden : false  
 
     } ,

@@ -26,9 +26,9 @@ export class EmployDisplayComponent implements OnInit , OnChanges {
   ngOnInit(): void {
   }
   ngOnChanges ( change :SimpleChanges)
-    {
+  {
     
       const current = <string>change.employyToDisplay.currentValue;
-      console.log(current)
+      console.log(change)
   } 
 }
