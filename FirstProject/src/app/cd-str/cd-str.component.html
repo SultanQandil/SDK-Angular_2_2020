@@ -2,6 +2,8 @@
 
 <p>cd-str parent works!</p>
 <input  #newnmae placeholder="ennter name ">
-<button (click)="addName(newnmae.value)">Add new Name </button>
+<button (click)="addName(newnmae.value) ;ref.refresh()">Add new Name </button>
+<button (click)="test()">test</button>
+<app-subchild></app-subchild>
 
-<app-cd-str-child [data]="names"></app-cd-str-child>
+<app-cd-str-child #ref [data]="names"></app-cd-str-child>

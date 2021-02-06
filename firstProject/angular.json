@@ -63,8 +63,7 @@
             }
           }
         },
-        "serve": 
-        {
+        "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
             "browserTarget": "FirstProject:build"
@@ -75,12 +74,11 @@
             }
           }
         },
-        "open": 
-        {
+        "open": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
             "browserTarget": "FirstProject:build",
-            "port" : 4500
+            "port": 4500
           },
           "configurations": {
             "production": {
@@ -139,5 +137,8 @@
       }
     }
   },
-  "defaultProject": "FirstProject"
+  "defaultProject": "FirstProject",
+  "cli": {
+    "analytics": false
+  }
 }

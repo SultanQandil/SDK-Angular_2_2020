@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-cd-str-child',
@@ -7,12 +7,14 @@ import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core
   changeDetection : ChangeDetectionStrategy.OnPush
 })
 export class CdStrChildComponent implements OnInit {
-@Input() data !: string
+@Input() data !: any
 check(){
   console.log("child cheked")
 }
-  constructor() { }
-
+  constructor(private CdRef : ChangeDetectorRef) { }
+refresh()
+{   this.CdRef.detectChanges()
+}
   ngOnInit(): void {
   }
 

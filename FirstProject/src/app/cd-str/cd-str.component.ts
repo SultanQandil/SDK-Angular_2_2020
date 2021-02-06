@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-cd-str',
@@ -8,11 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class CdStrComponent implements OnInit {
  names = ['sultan','farse','malak']
  addName(item :any){
-   //this.names.push(item)
-   this.names=[...this.names,item]
+   this.names.push(item)
+   //this.names=[...this.names,item]
  }
  check(){
   console.log("parent cheked")
+}
+test(){
+ 
 }
   constructor() { }
 
