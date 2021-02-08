@@ -1,0 +1,20 @@
+<div *ngFor="let c of customer">
+    <ul>
+<li 
+[ngStyle]="{'color': getColor(c.city)}"
+[ngClass]="{
+    'c1': c.city ==='amman',
+    'c2': c.city ==='irbid',
+    'c3': c.city ==='zarqaa'
+
+
+}"
+ >
+ {{c.name }} : {{c.city}}
+
+</li>
+<!-- <li [ngClass]="{'p': 'false'}" >wlecome class</li> -->
+</ul>
+</div>
+<h1 ngNonBindable>{{msg}}</h1>
+

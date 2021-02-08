@@ -9,12 +9,12 @@ import{ViewChildDecComponent}  from "../view-child-dec/view-child-dec.component"
 })
 export class ViewChildDecParentComponent implements OnInit , AfterViewInit {
   myTitle ="title"
-@ViewChild('child'  ) child !: ViewChildDecComponent
+@ViewChild('child' ,{ read :ElementRef}  ) child !: ViewChildDecComponent
 @ViewChildren('children') childs !: QueryList<ViewChildDecComponent>
   constructor() { }
 
  ngAfterViewInit(){
-   console.log("in after inint"  ,this.childs )
+   console.log("in after inint"  ,this.child )
   }
   
 
