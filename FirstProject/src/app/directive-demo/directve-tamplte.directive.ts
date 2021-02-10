@@ -1,12 +1,22 @@
-import { Directive, ElementRef } from '@angular/core';
+import { Directive, ElementRef, HostListener } from '@angular/core';
 
 @Directive({
   selector: '[appDirectveTamplte]'
 })
 export class DirectveTamplteDirective {
 
-  constructor(ele: ElementRef) {
-    ele.nativeElement.innerHTML ="red"
+  constructor(private ele: ElementRef) {
+    //ele.nativeElement.innerHTML ="red "
+    //ele.nativeElement.style.color='red'
    }
+@HostListener ('mouseover') onMouseOver(){
+  this.ele.nativeElement.style.background='gray'
 
+
+}
+@HostListener ('mouseleave') onMouseleave(){
+  this.ele.nativeElement.style.background='white'
+
+
+}
 }

@@ -18,6 +18,7 @@ import { CdStrChildComponent } from './cd-str-child/cd-str-child.component';
 import { NgStyleClassComponent } from './ng-style-class/ng-style-class.component';
 import { AppSirectiveDirective } from './app-sirective.directive';
 import { DirectiveDemoComponent } from './directive-demo/directive-demo.component';
+import { DirectveTamplteDirective } from './directive-demo/directve-tamplte.directive';
 
 @NgModule({
     declarations : [AppComponent, 
@@ -36,6 +37,7 @@ import { DirectiveDemoComponent } from './directive-demo/directive-demo.componen
                   NgStyleClassComponent, 
                   AppSirectiveDirective, 
                   DirectiveDemoComponent,
+                  DirectveTamplteDirective
                    ] , // set of component reltae to this module(array)
     imports: [BrowserModule , CommonModule , FormsModule],
     bootstrap :[AppComponent], // set of components of are bootsraped when this module is boostrabed 
